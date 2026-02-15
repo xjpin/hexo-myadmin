@@ -5,7 +5,7 @@ module.exports = {
         const config = await this.service.config.getConfig();
         this.res.send({config});
     },
-    
+
     async updateConfig() {
         const {config} = this.req.body;
         if (config){

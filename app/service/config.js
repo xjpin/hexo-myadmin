@@ -4,7 +4,7 @@ export default {
     getConfig() {
         return request.get("config");
     },
-    
+
     updateConfig(config) {
         return request.post("config", {config});
     },
@@ -12,7 +12,7 @@ export default {
     getThemeConfig() {
         return request.get("themeconfig");
     },
-    
+
     updateThemeConfig(config) {
         return request.post("themeconfig", {config});
     },

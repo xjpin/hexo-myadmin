@@ -28,7 +28,7 @@ module.exports.helper = function (req, resp, next) {
 };
 
 module.exports.auth = function (req, resp, next) {
-    if (req.url.includes("/login")) return next();
+    if (req.url.split("?")[0] === "/login") return next();
     if (req.session && req.session.login) return next();
     resp.send(401);
 };
